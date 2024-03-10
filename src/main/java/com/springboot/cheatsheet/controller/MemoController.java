@@ -1,10 +1,8 @@
 package com.springboot.cheatsheet.controller;
 
-import com.springboot.cheatsheet.dto.MemoResponseDto;
+import com.springboot.cheatsheet.dto.response.MemoResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.time.LocalDateTime;
 
 @RestController
 public class MemoController {
@@ -22,9 +20,7 @@ public class MemoController {
                 "Controller와 RestController의 차이",
                 "Controller는 View를, RestController는 JSON을 반환한다.",
                 "보통",
-                "김승규",
-                LocalDateTime.now(),
-                LocalDateTime.now()
+                "김승규"
         );
     }
 }
