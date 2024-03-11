@@ -29,6 +29,7 @@ public class MemoResponseDto {
         this.updatedAt = LocalDateTime.now();
     }
 
+    // json으로 변환하기 위해서는 getter가 필수이고, getter에서 내보내주는 값으로 json이 생성된다.
     public String getTitle() {
         return title + "추가된 내용입니다.";
     }
